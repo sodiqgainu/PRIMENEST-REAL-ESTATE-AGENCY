@@ -54,7 +54,7 @@ const handleScrollTo = (sectionId) => {
       }`}
       style={isScrolled ? { backdropFilter: 'blur(16px)', WebkitBackdropFilter: 'blur(16px)' } : {}}
     >
-       <div className='py-4 lg:px-20 px-10  flex items-center justify-between'>
+       <div className='py-4 lg:px-20 px-5  flex items-center justify-between'>
           <div className='w-40'>
             <img src="navLogo.png" alt="" />
           </div>
