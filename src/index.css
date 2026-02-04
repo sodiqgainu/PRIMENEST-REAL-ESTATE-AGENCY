@@ -1,0 +1,62 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'inter-reg';
+  src: url(/Fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+  font-family: 'han-reg';
+  src: url(/Fonts/Black_Han_Sans/BlackHanSans-Regular.ttf);
+}
+
+:root {
+  --bg-primary: #1E5236;
+  --bg-secondary: #004D40;
+  --bg-dark: #030303;
+  --bg-light: #ffffff;
+  --bg-limelight: #E0F2F1;
+  --bg-gray: #787878;
+  --inter-reg: 'inter-reg';
+  --han-reg: 'han-reg'
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+/* Lenis smooth scroll styles */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* GPU acceleration for smoother animations */
+img {
+  backface-visibility: hidden;
+}
+
+@theme inline{
+  --color-primary: var(--bg-primary);
+  --color-secondary: var(--bg-secondary);
+  --color-dark: var(--bg-dark);
+  --font-interReg : var(--inter-reg);
+  --font-hanReg : var(--han-reg);
+  --color-limeLight: var(--bg-limelight)
+}
+
