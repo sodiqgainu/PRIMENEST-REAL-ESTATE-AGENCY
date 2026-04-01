@@ -45,6 +45,8 @@ const handleScrollTo = (sectionId) => {
   if (isActive) setIsActive(false)
 }
 
+
+
   return (
     <header 
       className={`font-interReg fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -54,6 +56,11 @@ const handleScrollTo = (sectionId) => {
       }`}
       style={isScrolled ? { backdropFilter: 'blur(16px)', WebkitBackdropFilter: 'blur(16px)' } : {}}
     >
+
+    
+
+      
+
        <div className='py-4 lg:px-20 px-5  flex items-center justify-between'>
           <div className='w-40'>
             <img src="navLogo.png" alt="" />
@@ -90,9 +97,9 @@ const handleScrollTo = (sectionId) => {
             clipPath: isActive ? 'inset(0 0 0% 0)' : 'inset(0 0 100% 0)',
             opacity: isActive ? 1 : 0
           }}
-          transition={{ duration: 0.4, ease: 'easeInOut' }}
+          transition={{ duration: 0.4, ease: 'easeOut' }}
        >
-          <div className='flex flex-col items-start py-10 px-6 gap-2'>
+          <div className='flex flex-col  items-start py-10 px-6 gap-2'>
              <MobileNavLink onClick={() => handleScrollTo('#hero')}>Home</MobileNavLink>
              <MobileNavLink onClick={() => handleScrollTo('#properties')}>Properties</MobileNavLink>
              <MobileNavLink onClick={() => handleScrollTo('#about')}>About</MobileNavLink>

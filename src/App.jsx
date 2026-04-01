@@ -9,12 +9,14 @@ import Reasons from './components/Reasons'
 import About from './components/About'
 import BrowseProprties from './components/BrowseProprties'
 import Contact from './components/Contact'
+import WhatsAppButton from './components/WhatsAppButton'
 
 const App = () => {
   return (
     <SmoothScrollProvider>
       <div className='min-h-screen'>
         <Nav/>
+        <WhatsAppButton />
 
         <main>
           <Hero/>
