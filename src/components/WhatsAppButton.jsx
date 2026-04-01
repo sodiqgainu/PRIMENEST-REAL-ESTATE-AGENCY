@@ -3,7 +3,7 @@ import { motion } from 'motion/react'
 import { FaWhatsapp } from 'react-icons/fa'
 
 const WhatsAppButton = () => {
-  const phoneNumber = '2349137466167'
+  const phoneNumber = '2349164744446'
   const message = "Thanks for visiting our website what can we get you"
   
   // Create WhatsApp URL
